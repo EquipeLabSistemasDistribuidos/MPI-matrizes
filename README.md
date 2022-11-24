@@ -1,5 +1,5 @@
 # MPI matrizes
-´´´sudo apt install gcc´´´
+```sudo apt install gcc```
 ## Execução
-´´´gcc matriz.c -o saida´´´
-´´´./saida´´´
+```gcc matriz.c -o saida```
+```./saida```
