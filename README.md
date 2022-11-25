@@ -19,7 +19,7 @@ sudo apt install libopenmpi3
 
 ## Execução do RMI
 ```
-mpicc matriz-mpi -o saida
+mpicc matriz-mpi.c -o saida
 ```
 
 ```
