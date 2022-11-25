@@ -47,7 +47,7 @@ void imprimir_matriz(int m[][ordem])
 		}
 		printf("\n");
 	}
-    usleep(1000000);
+    //usleep(1000000);		//retirar comentário caso precise que as impressões de matrizes sejam mais lentas
 }
 
 //função que soma duas matriz
