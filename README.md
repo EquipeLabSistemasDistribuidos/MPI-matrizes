@@ -1,8 +1,34 @@
 # MPI matrizes
+## Dependências no Linux (ou WSL no Windows) do RMI
+```
+sudo apt install openssh-common
+```
+
+```
+sudo apt install openssh-bin
+```
+
+```
+sudo apt install openssh-client
+```
+```
+sudo apt install openssh-server
+```
+
+```
+sudo apt install libopenmpi-dev
+```
+
+```
+sudo apt install libopenmpi3
+```
+## Dependências no Linux (ou WSL no Windows) para COMPILAR CÓDIGO EM C 
+
+## Execução
 ```
 sudo apt install gcc
 ```
-## Execução
+
 ```
 gcc matriz.c -o saida
 ```
