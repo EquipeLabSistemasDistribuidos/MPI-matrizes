@@ -2,8 +2,6 @@
 ## Dependências no Linux (ou WSL no Windows) do RMI
 
 ```
-
-```
 sudo apt install openssh-client
 ```
 ```
