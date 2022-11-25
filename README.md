@@ -17,7 +17,16 @@ sudo apt install libopenmpi3
 ```
 ## Dependências no Linux (ou WSL no Windows) para COMPILAR CÓDIGO EM C 
 
-## Execução
+## Execução do RMI
+```
+mpicc matriz-mpi -o saida
+```
+
+```
+mpirun -n 4 ./saida
+```
+
+## Execução GCC
 ```
 sudo apt install gcc
 ```
