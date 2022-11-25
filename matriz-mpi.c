@@ -101,7 +101,6 @@ void somar_matrizes(int m1[][ordem], int m2[][ordem], int m_soma[][ordem], int p
 
 int main(int argc, char** argv){
     
-	
     int a[40][40], b[40][40], c[40][40], bytes = 40*40;
 	preencher_matriz(a);
 	usleep(1000000);	//sleep time para que a matriz a ser preenchida em B, não seja identica a matriz A. As matrizes são geradas aleatoriamente em função do tempo.
@@ -132,6 +131,7 @@ int main(int argc, char** argv){
     }
 	else																						//se for o processo 0 (world_rank = 0), realiza a soma das matrizes parte c1,1
 	{
+		printf("Processo atual: %d\n", world_rank);
 		somar_matrizes(a, b, c, world_rank);
         printf("*************************************************************** Matriz C ***************************************************************\n");
     	imprimir_matriz(c);
@@ -141,7 +141,6 @@ int main(int argc, char** argv){
     
     if (world_rank == 0) {
         MPI_Recv(&c, bytes, MPI_INT, world_size - 1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-		printf("Processo atual: %d\nRecebido a matriz C do processo %d\n", world_rank, world_size-1);
 		printf("*************************************************************** Matriz A ***************************************************************\n");
 		imprimir_matriz(a);
 		printf("*************************************************************** Matriz B ***************************************************************\n");
