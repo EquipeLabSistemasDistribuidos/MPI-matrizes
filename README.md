@@ -1,11 +1,6 @@
 # MPI matrizes
 ## Dependências no Linux (ou WSL no Windows) do RMI
-```
-sudo apt install openssh-common
-```
 
-```
-sudo apt install openssh-bin
 ```
 
 ```
