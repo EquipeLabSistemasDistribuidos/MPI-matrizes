@@ -26,7 +26,7 @@ mpicc matriz-mpi -o saida
 mpirun -n 4 ./saida
 ```
 
-## Execução GCC
+## Execução da matriz normal pelo GCC (não é pedido para a tarefa do Professor)
 ```
 sudo apt install gcc
 ```
