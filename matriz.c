@@ -41,7 +41,7 @@ void somar_matrizes(int m1[][ordem], int m2[][ordem], int m_soma[][ordem], int p
 {
 	int i, j, p_linha, p_coluna, u_linha, u_coluna;
 
-	//separando as matrizes
+	//selecionando parte da matriz as matrizes
 	switch (p)
 	{
 	case 1:
@@ -150,7 +150,7 @@ int main(int argc, char** argv){
 	imprimir_matriz(a);
 	printf("***Matriz B***\n");
 	imprimir_matriz(b);
-	for (i = 1; i <= 4; i++)
+	for (i = 1; i <= 4; i++)	//apenas alterar para rank
 	{
 		somar_matrizes(a, b, c, i);
 		printf("***Matriz C (SOMA %d)***\n", i);
