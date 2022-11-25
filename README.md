@@ -15,7 +15,7 @@ sudo apt install libopenmpi-dev
 ```
 sudo apt install libopenmpi3
 ```
-## Dependências no Linux (ou WSL no Windows) para COMPILAR CÓDIGO EM C 
+
 
 ## Execução do RMI
 ```
@@ -26,11 +26,12 @@ mpicc matriz-mpi -o saida
 mpirun -n 4 ./saida
 ```
 
-## Execução da matriz normal pelo GCC (não é pedido para a tarefa do Professor)
+## Dependências no Linux (ou WSL no Windows) para COMPILAR CÓDIGO EM C (não solicitado pelo Professor)
 ```
 sudo apt install gcc
 ```
 
+## Execução da matriz normal pelo GCC (não solicitado pelo Professor)
 ```
 gcc matriz.c -o saida
 ```
